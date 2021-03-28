@@ -1,0 +1,1005 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Hiragino Sans GB";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none !important;
+}
+
+body {
+  color: #656565;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/banner.JPG);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+header .navbar {
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+header .navbar nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+header .navbar nav img {
+  width: auto;
+  height: 50px;
+}
+
+header .navbar nav ul {
+  margin: 0;
+}
+
+header .navbar nav ul li {
+  display: inline-block;
+  line-height: 100px;
+  width: 130px;
+  font-family: BanglaMN;
+  font-size: 16px;
+  color: #ffffff;
+  letter-spacing: 0.76px;
+  font-weight: 500;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  text-align: center;
+  cursor: pointer;
+}
+
+header .navbar nav ul li:hover {
+  color: #76a4ff;
+  font-weight: 700;
+  text-shadow: 0 1px 2px rgba(224, 224, 224, 0.5);
+}
+
+header .navbar.scrolldown {
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.9);
+  -webkit-box-shadow: 0 2px 4px rgba(88, 88, 88, 0.15);
+          box-shadow: 0 2px 4px rgba(88, 88, 88, 0.15);
+}
+
+header .navbar.scrolldown img {
+  height: 45px;
+}
+
+header .navbar.scrolldown ul li {
+  color: #76a4ff;
+  line-height: 60px;
+}
+
+header .main-text {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90%;
+}
+
+header .main-text h1 {
+  font-family: BanglaMN;
+  font-weight: 700;
+  font-size: 50px;
+  color: #ffffff;
+  letter-spacing: 2.19px;
+  margin-bottom: 3px;
+}
+
+header .main-text h4 {
+  font-family: DINAlternate;
+  font-weight: 700;
+  font-size: 16px;
+  color: #718aba;
+  background-color: #fff;
+  letter-spacing: 0.7px;
+  padding: 6px 10px;
+  border-radius: 0 13px 0 13px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.myphoto {
+  width: 30%;
+  height: 0;
+  padding-bottom: 35%;
+  border-radius: 0 0 150px 0;
+  background-color: #e8f0ff;
+  background-image: url(../img/myphoto.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.title {
+  font-family: BanglaMN;
+  color: #7b98cf;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.second-title {
+  font-family: BanglaMN;
+  color: #7b98cf;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 1.05px;
+  margin-bottom: 25px;
+}
+
+#introduce {
+  display: inline-block;
+  width: 55%;
+  vertical-align: top;
+  padding-left: 85px;
+  padding-top: 65px;
+}
+
+#introduce p {
+  font-size: 17px;
+  letter-spacing: 2.09px;
+  line-height: 30px;
+}
+
+#introduce .contact {
+  margin-top: 70px;
+}
+
+#introduce .contact .contact-cont {
+  margin-bottom: 13px;
+  line-height: 20px;
+}
+
+#introduce .contact .contact-cont i {
+  font-size: 20px;
+  color: #95abd7;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+#introduce .contact .contact-cont p {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}
+
+#aboutme-cont {
+  margin-top: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#aboutme-cont #experience {
+  padding-right: 15px;
+  width: 60%;
+}
+
+#aboutme-cont #experience .expe {
+  margin-top: 30px;
+}
+
+#aboutme-cont #experience .expe .period {
+  width: 26%;
+  display: inline-block;
+  background-color: #8da6d6;
+  vertical-align: top;
+  padding: 7px 0;
+  border-radius: 15px 0 15px 0;
+}
+
+#aboutme-cont #experience .expe .period p {
+  font-family: DINAlternate;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.57px;
+  text-align: center;
+  margin: 0;
+}
+
+#aboutme-cont #experience .expe .content {
+  width: 73%;
+  display: inline-block;
+  padding-left: 13px;
+  margin-top: 3px;
+}
+
+#aboutme-cont #experience .expe .content .expe-title {
+  color: #7b98cf;
+  font-size: 20px;
+  letter-spacing: 1.32px;
+  margin-bottom: 15px;
+  font-family: PingFangTC;
+  font-weight: 500;
+}
+
+#aboutme-cont #experience .expe .content ul li {
+  font-size: 16px;
+  letter-spacing: 2.09px;
+  margin-top: 13px;
+  font-family: PingFangTC, 微軟正黑體;
+}
+
+#aboutme-cont #experience .expe .content ul li:nth-child(1) {
+  margin-top: 0;
+}
+
+#aboutme-cont .expe:nth-child(1) {
+  margin-top: 0;
+}
+
+#aboutme-cont #skills {
+  padding-left: 15px;
+  width: 40%;
+}
+
+#aboutme-cont #skills .skills {
+  margin-top: 35px;
+}
+
+#aboutme-cont #skills .skills .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#aboutme-cont #skills .skills .text p {
+  font-size: 14px;
+  letter-spacing: 1.19px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+#aboutme-cont #skills .skills .bar {
+  width: 100%;
+  height: 15px;
+  border-radius: 15px;
+  background-color: #f0f0f0;
+}
+
+#aboutme-cont #skills .skills .bar .length {
+  height: 100%;
+  border-radius: 15px;
+}
+
+#aboutme-cont #skills .skills .bar .length .length-color {
+  background-color: #c3d3f2;
+  height: 100%;
+  border-radius: 15px;
+  width: 100%;
+  -webkit-animation: skillBar 2s ease;
+          animation: skillBar 2s ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  display: none;
+}
+
+#aboutme-cont .skills:nth-child(1) {
+  margin-top: 0;
+}
+
+@-webkit-keyframes skillBar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes skillBar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.portfolio {
+  margin-top: 50px;
+  background-color: rgba(246, 250, 255, 0.9);
+  padding-top: 70px;
+  padding-bottom: 111px;
+}
+
+.portfolio .title {
+  text-align: center;
+}
+
+.portfolio .c-box {
+  z-index: 1;
+  width: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.portfolio .c-box .classified {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 55%;
+  margin: 0 auto 55px;
+}
+
+.portfolio .c-box .classified button {
+  border: 1px solid #7b98cf;
+  border-radius: 30px;
+  height: 50px;
+  background-color: transparent;
+  color: #7b98cf;
+  font-weight: 700;
+  width: 22%;
+  font-size: 16px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.portfolio .c-box .classified button.active {
+  background-color: #a5bce7;
+  color: #fff;
+  border: 1px solid #a5bce7;
+}
+
+.portfolio .c-box .classified button:hover {
+  background-color: #a5bce7;
+  color: #fff;
+  border: 1px solid #a5bce7;
+}
+
+.portfolio .c-box.scrolldown {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 60px;
+  background-color: rgba(246, 250, 255, 0.9);
+  -webkit-box-shadow: 0 2px 4px rgba(88, 88, 88, 0.15);
+          box-shadow: 0 2px 4px rgba(88, 88, 88, 0.15);
+}
+
+.portfolio .c-box.scrolldown .classified button {
+  border: 0;
+  border-radius: 20px 0 20px 0;
+}
+
+.portfolio .port-box {
+  margin-top: 50px;
+  position: relative;
+}
+
+.portfolio .port-box .port-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.portfolio .port-box .port-cont .port-pic {
+  width: 50%;
+  height: 0;
+  padding-bottom: 32%;
+  background-color: #c8e1ff;
+  border-radius: 50px 0 50px 0;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 0 3px 6px rgba(71, 71, 71, 0.2);
+          box-shadow: 0 3px 6px rgba(71, 71, 71, 0.2);
+}
+
+.portfolio .port-box .port-cont .text {
+  padding-left: 50px;
+  width: 50%;
+}
+
+.portfolio .port-box .port-cont .text h5 {
+  font-size: 20px;
+  color: #7b98cf;
+  letter-spacing: 1.32px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.portfolio .port-box .port-cont .text span {
+  font-size: 14px;
+  color: #bbbbbb;
+  letter-spacing: 0.93px;
+  margin-right: 5px;
+}
+
+.portfolio .port-box .port-cont .text p {
+  margin-top: 15px;
+  font-size: 16px;
+  letter-spacing: 1.19px;
+  line-height: 30px;
+}
+
+.portfolio .port-box .port-cont .text button {
+  width: 130px;
+  height: 45px;
+  background-color: #f8cc85;
+  border: 0;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 2px 4px rgba(204, 204, 204, 0.5);
+          box-shadow: 0 2px 4px rgba(204, 204, 204, 0.5);
+  position: absolute;
+  bottom: 10px;
+  overflow: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.79px;
+  font-size: 16px;
+}
+
+.portfolio .port-box .port-cont .text button a {
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.79px;
+  font-size: 16px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 45px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.portfolio .port-box .port-cont .text button:hover {
+  background-color: #ffdba1;
+}
+
+.portfolio .port-box .port-cont#port-concert .port-pic {
+  background-position: 50% 60% !important;
+}
+
+.portfolio .port-box:nth-child(even) .text {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  padding-left: 0;
+}
+
+.portfolio .port-box:nth-child(even) .port-pic {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  border-radius: 50px 0 50px 0;
+}
+
+.portfolio .port-show .modal-dialog {
+  width: 90%;
+  margin: 50px auto;
+}
+
+.portfolio .port-show .modal-dialog .modal-body {
+  position: relative;
+  padding: 0;
+}
+
+.portfolio .port-show .modal-dialog .modal-body .close {
+  position: absolute;
+  top: 0;
+  right: -30px;
+  opacity: 1;
+  text-shadow: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.portfolio .port-show .modal-dialog .modal-body .close i {
+  font-size: 28px;
+  color: #fff;
+}
+
+.portfolio .port-show .modal-dialog .modal-body .close:hover {
+  opacity: 1;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.portfolio .port-show .modal-dialog .modal-body .close:hover i {
+  color: #adc8ff;
+}
+
+.portfolio .port-show .modal-dialog .modal-body img {
+  width: 100%;
+}
+
+.portfolio .port-show .modal-dialog .modal-body .port-caro .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid #95abd7;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.portfolio .port-show .modal-dialog .modal-body .port-caro .carousel-indicators li.active {
+  background-color: #95abd7;
+}
+
+.portfolio .port-show .modal-dialog .modal-body .port-caro .caro-arrow {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #b2c4e8;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio .port-show .modal-dialog .modal-body .port-caro .caro-arrow .ca {
+  background-size: 80%;
+}
+
+.portfolio .port-show .modal-dialog .modal-body .port-caro .caro-arrow.carousel-control-prev {
+  left: 25px;
+}
+
+.portfolio .port-show .modal-dialog .modal-body .port-caro .caro-arrow.carousel-control-next {
+  right: 25px;
+}
+
+.portfolio .port-show#travel-app .modal-dialog {
+  margin: 100px auto;
+}
+
+.portfolio .port-show#trec-graphic .modal-dialog {
+  margin: 100px auto;
+}
+
+.portfolio .port-show#concert-poster .modal-dialog {
+  width: 40%;
+  margin: 30px auto;
+}
+
+.portfolio .port-show#greeting-card .modal-dialog {
+  width: 70%;
+}
+
+footer {
+  background-color: #b2c4e8;
+  text-align: center;
+  color: #fff;
+  font-family: BanglaMN;
+  font-size: 16px;
+  padding: 20px 0 10px;
+  font-weight: 500;
+  letter-spacing: 0.7px;
+}
+
+@media screen and (max-width: 768px) {
+  header .main-text {
+    width: 60%;
+  }
+  header .main-text h1 {
+    font-size: 40px;
+  }
+  header .main-text h4 {
+    font-size: 14px;
+    width: 400px;
+    margin: 0 auto;
+  }
+  .myphoto {
+    width: 100%;
+    padding-bottom: 116.6666%;
+  }
+  #introduce {
+    width: 100%;
+    padding-left: 0;
+  }
+  #aboutme-cont #experience {
+    width: 100%;
+  }
+  #aboutme-cont #experience .expe .period {
+    margin-bottom: 15px;
+    width: 160px;
+  }
+  #aboutme-cont #experience .expe .content {
+    display: block;
+    padding-left: 0;
+    width: 100%;
+  }
+  #aboutme-cont #skills {
+    width: 100%;
+    margin-top: 55px;
+    padding-left: 0;
+  }
+  .portfolio .c-box {
+    padding: 0 16px;
+  }
+  .portfolio .c-box .classified {
+    width: 100%;
+  }
+  .portfolio .c-box .classified button {
+    font-size: 16px;
+  }
+  .portfolio .port-box .port-cont .port-pic {
+    width: 100%;
+    padding-bottom: 64%;
+    border-radius: 50px 0 50px 0;
+  }
+  .portfolio .port-box .port-cont .text {
+    width: 100%;
+    padding-left: 0;
+    margin-top: 40px;
+  }
+  .portfolio .port-box .port-cont .text button {
+    position: static;
+    font-size: 15px;
+    width: 100px;
+    height: 40px;
+  }
+  .portfolio .port-box .port-cont .text button a {
+    line-height: 40px;
+  }
+  .portfolio .port-box .modal-dialog {
+    margin: 6rem auto;
+  }
+  .portfolio .port-box .modal-dialog .close {
+    display: none;
+  }
+  .portfolio .port-box:nth-child(even) .text {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .portfolio .port-box:nth-child(even) .port-pic {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    border-radius: 50px 0 50px 0;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  header .navbar {
+    height: 80px;
+  }
+  header .navbar nav img {
+    height: 45px;
+  }
+  header .navbar nav ul li {
+    color: #76a4ff;
+    font-size: 15px;
+    width: 100px;
+    line-height: 80px;
+  }
+  header .navbar.scrolldown nav img {
+    height: 40px;
+  }
+  header .navbar.scrolldown nav ul li {
+    line-height: 65px;
+  }
+  header .main-text {
+    width: 60%;
+  }
+  header .main-text h1 {
+    font-size: 30px;
+  }
+  header .main-text h4 {
+    font-size: 12px;
+    width: 90%;
+  }
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 1000px;
+  }
+}
+
+@media (max-width: 576px) {
+  .modal-dialog {
+    width: 80%;
+  }
+  .portfolio .port-show .modal-dialog .modal-body .port-caro .caro-arrow {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .portfolio .port-show#concert-poster .modal-dialog {
+    width: 90%;
+  }
+  .portfolio .port-show#greeting-card .modal-dialog {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  header .main-text h4 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  header .main-text {
+    width: 90%;
+  }
+  header .main-text h4 {
+    width: 95%;
+  }
+  .portfolio .c-box .classified button {
+    border: 0;
+    font-size: 14px;
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header .navbar nav img {
+    height: 35px;
+  }
+  header .navbar nav ul li {
+    font-size: 13px;
+    width: 90px;
+  }
+  .portfolio .c-box .classified button {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  header .main-text {
+    width: 60%;
+  }
+  header .main-text h1 {
+    font-size: 45px;
+  }
+  header .main-text h4 {
+    font-size: 14px;
+    width: 400px;
+  }
+  .title {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  .myphoto {
+    width: 100%;
+    padding-bottom: 116.6666%;
+  }
+  #introduce {
+    padding-left: 0;
+    width: 100%;
+  }
+  #aboutme-cont #experience {
+    width: 55%;
+    padding-right: 5px;
+  }
+  #aboutme-cont #experience .expe {
+    margin-top: 10px;
+  }
+  #aboutme-cont #experience .expe .period {
+    display: block;
+    width: 160px;
+    margin-bottom: 10px;
+    padding: 5px 0;
+  }
+  #aboutme-cont #experience .expe .content {
+    width: 100%;
+    padding-left: 0;
+  }
+  #aboutme-cont #experience .expe .content ul li {
+    margin-top: 11px;
+  }
+  #aboutme-cont #experience .expe .content ul li:nth-child(1) {
+    margin-top: 0;
+  }
+  #aboutme-cont #skills {
+    width: 45%;
+  }
+  #aboutme-cont #skills .skills {
+    margin-top: 37px;
+  }
+  #aboutme-cont #skills .skills:nth-child(1) {
+    margin-top: 0;
+  }
+  .portfolio .c-box .classified {
+    width: 90%;
+  }
+  .portfolio .port-box .port-cont .port-pic {
+    border-radius: 50px 0 50px 0;
+  }
+  .portfolio .port-box .port-cont .text {
+    padding-left: 25px;
+  }
+  .portfolio .port-box .port-cont .text h5 {
+    font-size: 18px;
+    margin-bottom: 3px;
+  }
+  .portfolio .port-box .port-cont .text p {
+    margin-top: 0;
+  }
+  .portfolio .port-box .port-cont .text button {
+    bottom: 0;
+    height: 40px;
+    width: 100px;
+  }
+  .portfolio .port-box .port-cont .text button a {
+    line-height: 40px;
+  }
+  .portfolio .port-box:nth-child(even) .port-cont .port-pic {
+    border-radius: 0 50px 0 50px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .myphoto {
+    width: 50%;
+    padding-bottom: 58.3333%;
+  }
+  #introduce {
+    padding-left: 15px;
+    padding-top: 40px;
+    width: 49%;
+  }
+  #introduce .contact {
+    margin-top: 30px;
+  }
+  #introduce .contact .contact-cont {
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header .main-text {
+    width: auto;
+  }
+  header .main-text h1 {
+    font-size: 50px;
+  }
+  header .main-text h4 {
+    font-size: 16px;
+    width: 100%;
+  }
+  .title {
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+  #introduce .contact {
+    margin-top: 70px;
+  }
+  #introduce .contact .contact-cont {
+    margin-bottom: 13px;
+  }
+  #aboutme-cont #experience {
+    width: 60%;
+    padding-right: 15px;
+  }
+  #aboutme-cont #experience .expe {
+    margin-top: 30px;
+  }
+  #aboutme-cont #experience .expe .period {
+    display: inline-block;
+    width: 26%;
+    margin-bottom: 0;
+    padding: 7px 0;
+  }
+  #aboutme-cont #experience .expe .content {
+    width: 73%;
+    padding-left: 13px;
+  }
+  #aboutme-cont #experience .expe .content ul li {
+    margin-top: 13px;
+  }
+  #aboutme-cont #experience .expe .content ul li:nth-child(1) {
+    margin-top: 0;
+  }
+  #aboutme-cont #experience .expe:nth-child(1) {
+    margin-top: 0;
+  }
+  #aboutme-cont #skills {
+    width: 40%;
+  }
+  #aboutme-cont #skills .skills {
+    margin-top: 35px;
+  }
+  #aboutme-cont #skills .skills:nth-child(1) {
+    margin-top: 0;
+  }
+  .portfolio .c-box .classified {
+    width: 55%;
+  }
+  .portfolio .port-box .port-cont .port-pic {
+    border-radius: 50px 0 50px 0;
+  }
+  .portfolio .port-box .port-cont .text {
+    padding-left: 50px;
+  }
+  .portfolio .port-box .port-cont .text h5 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  .portfolio .port-box .port-cont .text p {
+    margin-top: 15px;
+  }
+  .portfolio .port-box .port-cont .text button {
+    bottom: 10px;
+    height: 45px;
+    width: 130px;
+  }
+  .portfolio .port-box .port-cont .text button a {
+    line-height: 45px;
+  }
+  .portfolio .port-box:nth-child(even) .port-cont .port-pic {
+    border-radius: 50px 0 50px 0;
+  }
+  .portfolio .port-box:nth-child(even) .port-cont .text {
+    padding-left: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .myphoto {
+    width: 30%;
+    padding-bottom: 35%;
+  }
+  #introduce {
+    padding-left: 85px;
+    width: 55%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
