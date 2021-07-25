@@ -13,22 +13,22 @@ $(window).on("mousewheel", function () {
 });
 
 $(window).on("resize scroll", function () {
-	var headerHeight = $("header").height() - $(".navbar").height();
-	if ($(window).scrollTop() > headerHeight) {
-		$(".navbar").addClass("scrolldown");
-	} else {
-		$(".navbar").removeClass("scrolldown");
-	}
+	var headerHeight = $(".banner").height() - $(".navbar").height();
+	// if ($(window).scrollTop() > headerHeight) {
+	// 	$(".navbar").addClass("scrolldown");
+	// } else {
+	// 	$(".navbar").removeClass("scrolldown");
+	// }
 	var skHeightforLg_start = $(".myphoto").width() * 1.17 + 160;
 	var skHeightforLg_end =
-		$("header").height() +
+		$(".banner").height() +
 		$(".myphoto").width() * 1.17 +
 		$("#aboutme-cont").height() +
 		50;
 	var skHeightforMb_start =
 		$(".myphoto").width() * 1.17 + $("#introduce").height() + 200;
 	var skHeightforMb_end =
-		$("header").height() +
+		$(".banner").height() +
 		$(".myphoto").width() * 1.17 +
 		$("#introduce").height() +
 		$("#aboutme-cont").height() +
@@ -39,7 +39,7 @@ $(window).on("resize scroll", function () {
 		$("#experience").height() +
 		280;
 	var skHeightforSm_end =
-		$("header").height() +
+		$(".banner").height() +
 		$(".myphoto").width() * 1.17 +
 		$("#introduce").height() +
 		$("#aboutme-cont").height() +
@@ -76,17 +76,8 @@ $(window).on("resize scroll", function () {
 		}
 	}
 
-	var portHeightLg =
-		$("header").height() +
-		$(".myphoto").width() * 1.17 +
-		$("#aboutme-cont").height() +
-		55 +
-		50 +
-		70 +
-		$(".portfolio").children(".title").height() +
-		25 -
-		$(".navbar").height();
-	var portHeightSm = portHeightLg + $("#introduce").height() + 65;
+	var portHeightLg =$("#banner").height() + $(".about").height() + $("#aboutme-cont").height() +55+60+65 +50+ 70 + 35 + 25;
+	var portHeightSm = $("#banner").height() + $(".about").height() + $("#aboutme-cont").height() +55+60+65 +50+ 70 + 35 + 25;
 	if ($(window).width() > 900 || $(window).width() == 900) {
 		if ($(window).scrollTop() > portHeightLg) {
 			$(".c-box").addClass("scrolldown");
@@ -105,17 +96,8 @@ $(window).on("resize scroll", function () {
 $(".classified")
 	.children("button")
 	.click(function () {
-		var portHeightLg =
-			$("header").height() +
-			$(".myphoto").width() * 1.17 +
-			$("#aboutme-cont").height() +
-			55 +
-			50 +
-			70 +
-			$(".portfolio").children(".title").height() +
-			25 -
-			$(".navbar").height();
-		var portHeightSm = portHeightLg + $("#introduce").height() + 65;
+		var portHeightLg =$("#banner").height() + $(".about").height() + $("#aboutme-cont").height() +55+60+65 +50+ 70 + 35 + 25;
+		var portHeightSm = $("#banner").height() + $(".about").height() + $("#aboutme-cont").height() +55+60+65 +50+ 70 + 35 + 25;
 		if (!$(this).hasClass("active")) {
 			$(".classified").children("button").removeClass("active");
 			$(this).addClass("active");
